@@ -209,6 +209,7 @@ install(DIRECTORY include/
 install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/include/
         DESTINATION include
 )
+install(FILES $<TARGET_PDB_FILE:ecl> DESTINATION bin OPTIONAL)
 
 if (NOT BUILD_TESTS)
     return ()
